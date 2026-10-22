@@ -1,0 +1,189 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TestPc DoorFL BCM
+
+
+BO_ 1282 DoorFL_NM: 8 DoorFL
+ SG_ NM_SourceNodeId_DoorFL : 7|8@0+ (1,0) [0|0] ""  BCM
+ SG_ NM_RMR_DoorFL : 8|1@0+ (1,0) [0|0] ""  BCM
+ SG_ NM_PNI_DoorFL : 14|1@0+ (1,0) [0|0] ""  BCM
+ SG_ NM_CSR_DoorFL : 11|1@0+ (1,0) [0|0] ""  BCM
+ SG_ NM_AW_DoorFL : 12|1@0+ (1,0) [0|0] ""  BCM
+
+BO_ 1281 BCM_NM: 8 BCM
+ SG_ NM_SourceNodeId_BCM : 7|8@0+ (1,0) [0|0] ""  DoorFL
+ SG_ NM_RMR_BCM : 8|1@0+ (1,0) [0|0] ""  DoorFL
+ SG_ NM_PNI_BCM : 14|1@0+ (1,0) [0|0] ""  DoorFL
+ SG_ NM_CSR_BCM : 11|1@0+ (1,0) [0|0] ""  DoorFL
+ SG_ NM_AW_BCM : 12|1@0+ (1,0) [0|0] ""  DoorFL
+
+BO_ 256 BCM_Status0: 8 BCM
+ SG_ BCM_OnWriteMsg : 0|2@1+ (1,0) [0|0] ""  DoorFL
+
+BO_ 2015 DiagFuncRequest: 8 TestPc
+ SG_ ToFuncBcmDiagNpdu : 7|64@0+ (1,0) [0|0] ""  BCM
+
+BO_ 1800 DiagPhysResponse: 8 BCM
+ SG_ OutBcmDiagNpdu : 7|64@0+ (1,0) [0|0] ""  TestPc
+
+BO_ 1792 DiagPhysRequest: 8 TestPc
+ SG_ ToBcmDiagNpdu : 7|64@0+ (1,0) [0|0] ""  BCM
+
+BO_ 769 Door_Status2: 8 DoorFL
+ SG_ Door_BottonStatus : 0|8@1- (1,0) [0|0] ""  BCM
+
+BO_ 768 BCM_Status2: 8 BCM
+ SG_ BCM_LedStatus : 0|8@1- (1,0) [0|0] ""  DoorFL
+
+BO_ 513 Door_Status1: 8 DoorFL
+ SG_ Door_WinADC : 55|16@0+ (1,0) [0|0] ""  BCM
+ SG_ Door_DoorStatus : 7|8@0- (1,0) [0|0] ""  BCM
+
+BO_ 512 BCM_Status1: 8 BCM
+ SG_ BCM_Status1_Counter : 8|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BCM_Status1_CRC : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BCM_KEY3_Status : 26|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BCM_KEY2_Status : 28|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BCM_KEY1_Status : 30|2@1+ (1,0) [0|0] ""  DoorFL
+ SG_ BCM_SystemStatus : 16|8@1- (1,0) [0|0] ""  DoorFL
+ SG_ BCM_ADC1 : 32|16@1- (1,0) [0|0] ""  DoorFL
+
+
+
+BA_DEF_  "Baudrate" INT 1000 1000000;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "NmAsrMessageCount" INT 0 255;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","not-used","not-used","not-used","cyclicAndSpontaneous","not-used","cyclicIfActive","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "Yes","No";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "Baudrate" 1000;
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "NmAsrNode" "No";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "CAN";
+BA_ "Baudrate" 500000;
+BA_ "NmAsrNode" BU_ DoorFL 1;
+BA_ "NmAsrNodeIdentifier" BU_ DoorFL 2;
+BA_ "NmAsrNode" BU_ BCM 1;
+BA_ "NmAsrNodeIdentifier" BU_ BCM 1;
+BA_ "GenMsgCycleTime" BO_ 1282 500;
+BA_ "GenMsgSendType" BO_ 1282 0;
+BA_ "NmAsrMessage" BO_ 1282 1;
+BA_ "GenMsgCycleTime" BO_ 1281 500;
+BA_ "GenMsgSendType" BO_ 1281 0;
+BA_ "NmAsrMessage" BO_ 1281 1;
+BA_ "GenMsgCycleTime" BO_ 256 0;
+BA_ "GenMsgSendType" BO_ 256 1;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "GenMsgSendType" BO_ 1800 1;
+BA_ "GenMsgCycleTime" BO_ 1800 0;
+BA_ "DiagResponse" BO_ 1800 1;
+BA_ "GenMsgCycleTime" BO_ 1792 0;
+BA_ "GenMsgSendType" BO_ 1792 1;
+BA_ "DiagRequest" BO_ 1792 1;
+BA_ "GenMsgCycleTime" BO_ 769 10;
+BA_ "GenMsgSendType" BO_ 769 0;
+BA_ "GenMsgSendType" BO_ 768 0;
+BA_ "GenMsgCycleTime" BO_ 768 50;
+BA_ "GenMsgSendType" BO_ 513 0;
+BA_ "GenMsgCycleTime" BO_ 513 50;
+BA_ "GenMsgDelayTime" BO_ 512 20;
+BA_ "GenMsgNrOfRepetition" BO_ 512 2;
+BA_ "GenMsgCycleTimeFast" BO_ 512 20;
+BA_ "GenMsgCycleTime" BO_ 512 100;
+BA_ "GenMsgSendType" BO_ 512 5;
+BA_ "GenSigSendType" SG_ 256 BCM_OnWriteMsg 1;
+BA_ "GenSigSendType" SG_ 2015 ToFuncBcmDiagNpdu 7;
+BA_ "GenSigSendType" SG_ 1800 OutBcmDiagNpdu 7;
+BA_ "GenSigSendType" SG_ 1792 ToBcmDiagNpdu 7;
+BA_ "GenSigSendType" SG_ 512 BCM_KEY3_Status 4;
+BA_ "GenSigSendType" SG_ 512 BCM_KEY2_Status 4;
+BA_ "GenSigSendType" SG_ 512 BCM_KEY1_Status 4;
+VAL_ 512 BCM_KEY3_Status 0 "Default" 1 "Not Pressd" 2 "Pressed" 3 "Invalid" ;
+VAL_ 512 BCM_KEY2_Status 0 "Default" 1 "Not Pressd" 2 "Pressed" 3 "Invalid" ;
+VAL_ 512 BCM_KEY1_Status 0 "Default" 1 "Not Pressd" 2 "Pressed" 3 "Invalid" ;
+

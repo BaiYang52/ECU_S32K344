@@ -1,0 +1,131 @@
+Timestamp                          |  2026/10/22 23:09:56
+==========================================================================================
+Starting...
+==========================================================================================
+  Tool version                     |  3.12.0.0
+  Command line args                |  
+  Execution path                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\McalIntegrationHelper\3rdPartyMcalIntegrationHelper.exe
+  Calling path                     |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\McalIntegrationHelper
+  MCAL found                       |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k
+  Number of MCALs found            |  1
+  Config file                      |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\VectorIntegration\MIPconfig.xml
+==========================================================================================
+Parsing MIP config...
+==========================================================================================
+  Schema version                   |  3.0.0
+  SipBase absolute path            |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00
+  McalSupply absolute path         |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply
+------------------------------------------------------------------------------------------
+Configured packages                
+------------------------------------------------------------------------------------------
+  TechRef                          |  ?CONST.TechRef_PathRel?\TechnicalReference_3rdParty-MCAL-Integration_S32K.pdf
+  Summary                          |  MCAL Package
+  NameExpected                     |  S.?32K.*(MCAL|RTD).*
+  Description                      |  Base package containing the S32K3xx AUTOSAR 4.x MCAL
+  Mandatory                        |  True
+  Id                               |  1
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Tresos Tool
+  NameExpected                     |  .*tresos.*
+  Description                      |  Contains the 3rd Party Configuration and Generation Tool
+  Mandatory                        |  True
+  Id                               |  2
+  ----------------------------------------------------------------------------------------
+  Summary                          |  HSE firmware
+  NameExpected                     |  (?i)HSE_FW_S32.*_.*
+  Description                      |  Contains the HSE firmware and interface
+  Mandatory                        |  False
+  Id                               |  3
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Safety Peripheral Drivers
+  NameExpected                     |  (?i)S.?32K.*SPD_\d*\.\d*\.\d*
+  Description                      |  Contains the SPD drivers
+  Mandatory                        |  False
+  Id                               |  4
+  ----------------------------------------------------------------------------------------
+  Summary                          |  Sbc package
+  NameExpected                     |  (S32K3\d*_)?FS26(_\w*)?_\d.\d_\d.\d.*
+  Description                      |  Contains the Sbc drivers
+  Mandatory                        |  False
+  Id                               |  5
+  ----------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------
+==========================================================================================
+Packages found in SIP
+==========================================================================================
+  Name                             |  SW32K3_RTD_4.4_2.0.1
+  Path_Abs                         |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1
+  PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+  Name                             |  tresos
+  Path_Abs                         |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\tresos
+  Version                          |  28.2.0  b211016-0103
+  PackageIdentified                |  False
+  ----------------------------------------------------------------------------------------
+  Evaluate CDD feature             |  
+  ActionEnableCdd                  |  Enables CDD feature if MCAL Base package is in use.: MCAL Package |   path: ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1
+  Result                           |  True
+==========================================================================================
+Initialize CDD
+==========================================================================================
+  Parsing CDD config file          |  
+                                   |  Path to CDD config file: E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\VectorIntegration\CddHandling\Configuration\CddConfig.xml
+    CddPackagePath                 |  
+                                   |  No valid CDD package paths found
+    CddModulePath                  |  
+                                   |  No valid CDD module paths found
+    CddModuleUsed                  |  
+                                   |  No valid CDD modules used
+  ----------------------------------------------------------------------------------------
+  Parsing CDD exclude list         |  
+                                   |  Path to CDD exclude file: E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\VectorIntegration\CddHandling\Configuration\CddExcludeList.xml
+    Modules found                  |  
+                                   |  base
+                                   |  can
+                                   |  cantrcv
+                                   |  canif
+                                   |  cryif
+                                   |  csm
+                                   |  dem
+                                   |  det
+                                   |  ecuc
+                                   |  ecum
+                                   |  eth
+                                   |  ethif
+                                   |  ethtrcv
+                                   |  fr
+                                   |  frif
+                                   |  fee
+                                   |  lin
+                                   |  linif
+                                   |  memif
+                                   |  os
+                                   |  resource
+                                   |  resourcem
+                                   |  rte
+                                   |  wdgif
+  ----------------------------------------------------------------------------------------
+  Search CDDs in Supply folder     |  
+                                   |  
+  MCAL package path                |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\Crc_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\EthSwt_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\I2s_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\I3c_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\Platform_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\Rm_TS_T40D34M20I1R0
+    Module found                   |  E:\S32K344\Temp\Proj_Config\CBD2300384_D00\ThirdParty\Mcal_S32k\Supply\SW32K3_RTD_4.4_2.0.1\eclipse\plugins\Sent_TS_T40D34M20I1R0
+                                   |  
+  MCAL package path                |  
+                                   |  No modules found
+                                   |  
+  MCAL package path                |  
+                                   |  No modules found
+                                   |  
+  MCAL package path                |  
+                                   |  No modules found
+------------------------------------------------------------------------------------------
+  Load CDDs from Cdd config file   |  
+==========================================================================================
+Finish tool
+==========================================================================================
