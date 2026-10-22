@@ -32,31 +32,31 @@ Refer to Settings_ExtGen_S32K3xx.xml
 -->
 <GeneratorPackageInformation xsi:schemaLocation="com.vector.cfg.gen.core.generatorpackageinformation GeneratorPackageInformation.xsd" xmlns="com.vector.cfg.gen.core.generatorpackageinformation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/Base</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/Base</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/Mcl</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/Mcl</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/Sbc_fs26</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/Sbc_fs26</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/Uart</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/Uart</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/Bist</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/Bist</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/eMcem</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/eMcem</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/SafetyBase</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/SafetyBase</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 </GeneratorPackageInformation>

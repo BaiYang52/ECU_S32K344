@@ -36,7 +36,7 @@ refer to Settings_ExtGen_S32K3xx.xml
       <Settings Name="DrvSafetyBase_S32K3xxNxp01Asr4Sub">
         <XmlSetting Name="Xml"><![CDATA[
           <Synchronization>
-            <BswImplementationName>/TS_T40D34M10I0R0/SafetyBase_Impl</BswImplementationName>
+            <BswImplementationName>/TS_T40D34M20I1R0/SafetyBase_Impl</BswImplementationName>
             <ModuleName>SafetyBase</ModuleName>
             <ExclusiveAreas>
             </ExclusiveAreas>

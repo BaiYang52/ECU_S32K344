@@ -32,22 +32,22 @@ refer to Settings_ExtGen_S32K3xx.xml
 <Settings>
 	<Settings Name="com.vector.cfg.gen.Tresos_proxy.settings.TresosSettings">   <!-- Constant -->
 		<Settings Name="ModuleList">
-			<Settings Name=" I2c_TS_T40D17M8I1R0">   							<!--ModuleName -->
-			    <Setting Name="ModuleDefRef" Value="/TS_T40D17M8I1R0/I2c"/>		<!-- ModuleDefinition Path -->
-				<Setting Name="PluginName" Value="I2c_TS_T40D17M8I1R0"/>   		<!-- Tresos Plugin name -->
+			<Settings Name=" I2c_TS_T40D34M20I1R0">   							<!--ModuleName -->
+			    <Setting Name="ModuleDefRef" Value="/TS_T40D34M20I1R0/I2c"/>		<!-- ModuleDefinition Path -->
+				<Setting Name="PluginName" Value="I2c_TS_T40D34M20I1R0"/>   		<!-- Tresos Plugin name -->
 				<Setting Name="Target" Value="CORTEXM"/>
-				<Setting Name="Derivate" Value="S32K2XXM7"/>
-				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\DaVinciConfigurator\Generators\Mcal_S32k\prepare_output_S32K3xx.xsl"/>	
+				<Setting Name="Derivate" Value="S32K3XX"/>
+				<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_S32k\GeneratorMsr\prepare_output_S32K3xx.xsl"/>	
 				<Settings Name="AdditionalModulesForGeneration">	
 				<!-- N-times modules, dependencies to validate the current module -->
-				    <Setting Name="Resource" Value="/TS_T40D17M8I1R0/Resource"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
+				    <Setting Name="Resource" Value="/TS_T40D34M20I1R0/Resource"/>	 <!-- DefRef ModuleDefinition of the Dependency -->
 				    <Setting Name="EcuM" Value="/[ANY]/EcuM"/>
 				    <Setting Name="EcuC" Value="/[ANY]/EcuC"/>
 				    <Setting Name="Os" Value="/[ANY]/Os"/>
 					<Setting Name="Dem" Value="/[ANY]/Dem"/>
-					<Setting Name="Base" Value ="/TS_T40D17M8I1R0/Base"/>	
-<Setting Name="Mcl" Value="/TS_T40D17M8I1R0/Mcl"/>
-					<Setting Name="Mcu" Value="/TS_T40D17M8I1R0/Mcu"/>
+					<Setting Name="Base" Value ="/TS_T40D34M20I1R0/Base"/>	
+<Setting Name="Mcl" Value="/TS_T40D34M20I1R0/Mcl"/>
+					<Setting Name="Mcu" Value="/TS_T40D34M20I1R0/Mcu"/>
 			    </Settings>	  
 			</Settings>
 		</Settings>
@@ -58,7 +58,7 @@ refer to Settings_ExtGen_S32K3xx.xml
       <Settings Name="DrvI2c_S32K3xxNxp01Asr4Sub">
         <XmlSetting Name="Xml"><![CDATA[
           <Synchronization>
-            <BswImplementationName>/TS_T40D17M8I1R0/I2c_Impl</BswImplementationName>
+            <BswImplementationName>/TS_T40D34M20I1R0/I2c_Impl</BswImplementationName>
             <ModuleName>I2c</ModuleName>
             <ExclusiveAreas>
               <ExclusiveArea name="I2C_EXCLUSIVE_AREA_00"/>

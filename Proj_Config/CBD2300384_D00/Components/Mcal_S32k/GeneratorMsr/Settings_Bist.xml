@@ -36,7 +36,7 @@ refer to Settings_ExtGen_S32K3xx.xml
       <Settings Name="DrvBist_S32K3xxNxp01Asr4Sub">
         <XmlSetting Name="Xml"><![CDATA[
           <Synchronization>
-            <BswImplementationName>/TS_T40D34M10I0R0/Bist_Impl</BswImplementationName>
+            <BswImplementationName>/TS_T40D34M20I1R0/Bist_Impl</BswImplementationName>
             <ModuleName>Bist</ModuleName>
             <ExclusiveAreas>
             </ExclusiveAreas>

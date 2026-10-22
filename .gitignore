@@ -45,3 +45,28 @@ Backup*
 
 # IAR .dep files
 *.dep
+
+
+# Autosar Davinci configutator Log files
+# DavinciProject/Log/
+# .metadata/
+# .cache/
+# .plugins/
+# org.eclipse.osegi/
+
+# --- EB tresos / Eclipse runtime state: NEVER version-control this ---
+# Regenerated on every tresos start. Tracking it is actively harmful: with
+# core.autocrlf=true a checkout rewrites configuration/org.eclipse.osgi/.manager/.fileTable
+# so its last line ends with CRLF instead of LF. Equinox then treats the trailing CRC line
+# as a property with an empty value -> StorageManager.updateTable -> Integer.parseInt("")
+# -> NumberFormatException -> EclipseStarter.startup fails -> launcher exit code 13
+# -> DaVinci Configurator shows "Tresos79003 ... has returned the ExitCode 13".
+# If it ever breaks again:  bin\tresos_cmd.bat -clean   (rebuilds this cache)
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/configuration/org.eclipse.osgi/
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/configuration/org.eclipse.equinox.app/
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/configuration/org.eclipse.equinox.launcher/
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/configuration/org.eclipse.update/
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/configuration/.settings/
+/CBD2300384_D00/ThirdParty/Mcal_S32k/Supply/tresos/workspace/.metadata/
+DavinciProject/Appl/GenData/RteCache
+DavinciProject/Log

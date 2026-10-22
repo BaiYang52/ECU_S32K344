@@ -2,7 +2,7 @@
 <ExtModuleInitialization xmlns="InitService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="InitService .\InitService.xsd">
 <!--Adc_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Adc</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Adc</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Adc_Init</InitFunctionName>
 			<InitFunctionHeader>Adc.h</InitFunctionHeader>
@@ -29,7 +29,7 @@
 
 <!--No_Base_Init--> <!--
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/BaseNXP</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Base</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Base_Init</InitFunctionName>
 			<InitFunctionHeader>Base.h</InitFunctionHeader>
@@ -41,7 +41,7 @@
 
 <!--OsIf_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/BaseNXP</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Base</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>OsIf_Init</InitFunctionName>
 			<InitFunctionHeader>OsIf.h</InitFunctionHeader>
@@ -60,7 +60,7 @@
 	
 <!--Crypto_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Crypto</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Crypto</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Crypto_Init</InitFunctionName>
 			<InitFunctionHeader>Crypto.h</InitFunctionHeader>
@@ -79,7 +79,7 @@
 
 <!--No_Dio_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Dio</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Dio</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Dio_Init</InitFunctionName>
 			<InitFunctionHeader>Dio.h</InitFunctionHeader>
@@ -91,7 +91,7 @@
 
 <!--Eth_Init-->
 	<InitModule>
-		<ModuleRef>/Eth_43_GMAC_TS_T40D34M30I0R0/Eth</ModuleRef>
+		<ModuleRef>/Eth_43_GMAC_TS_T40D34M20I1R0/Eth</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Eth_43_GMAC_Init</InitFunctionName>
 			<InitFunctionHeader>Eth_43_GMAC.h</InitFunctionHeader>
@@ -126,7 +126,7 @@
 
 <!--Fee_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Fee</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Fee</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Fee_Init</InitFunctionName>
 			<InitFunctionHeader>Fee.h</InitFunctionHeader>
@@ -145,7 +145,7 @@
 
 <!--Fls_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Fls</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Fls</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Fls_Init</InitFunctionName>
 			<InitFunctionHeader>Fls.h</InitFunctionHeader>
@@ -172,7 +172,7 @@
 
 <!--Gpt_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Gpt</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Gpt</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Gpt_Init</InitFunctionName>
 			<InitFunctionHeader>Gpt.h</InitFunctionHeader>
@@ -199,7 +199,7 @@
 
 <!--I2c_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/I2c</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/I2c</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>I2c_Init</InitFunctionName>
 			<InitFunctionHeader>Cdd_I2c.h</InitFunctionHeader>
@@ -226,7 +226,7 @@
 
 <!--Icu_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Icu</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Icu</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Icu_Init</InitFunctionName>
 			<InitFunctionHeader>Icu.h</InitFunctionHeader>
@@ -253,7 +253,7 @@
 
 <!--Mcl_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Mcl</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Mcl</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Mcl_Init</InitFunctionName>
 			<InitFunctionHeader>CDD_Mcl.h</InitFunctionHeader>
@@ -280,7 +280,7 @@
 
 <!--Mcu_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Mcu</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Mcu</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Mcu_Init</InitFunctionName>
 			<InitFunctionCall>Mcu_InitClock(McuConf_McuClockSettingConfig_McuClockSettingConfig_0);while (MCU_PLL_LOCKED != Mcu_GetPllStatus());Mcu_DistributePllClock();Mcu_SetMode(McuConf_McuModeSettingConf_McuModeSettingConf_0);</InitFunctionCall>
@@ -308,7 +308,7 @@
 
 <!--Ocu_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Ocu</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Ocu</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Ocu_Init</InitFunctionName>
 			<InitFunctionHeader>Ocu.h</InitFunctionHeader>
@@ -335,7 +335,7 @@
 
 <!--Port_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Port</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Port</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Port_Init</InitFunctionName>
 			<InitFunctionHeader>Port.h</InitFunctionHeader>
@@ -362,7 +362,7 @@
 
 <!--Pwm_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Pwm</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Pwm</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Pwm_Init</InitFunctionName>
 			<InitFunctionHeader>Pwm.h</InitFunctionHeader>
@@ -389,7 +389,7 @@
 
 <!--No_Resource_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Resource</ModuleRef> 
+		<ModuleRef>/TS_T40D34M20I1R0/Resource</ModuleRef> 
 		<ModuleInitFunction>
 			<InitFunctionName>Resource_Init</InitFunctionName>
 			<InitFunctionHeader>Resource.h</InitFunctionHeader>
@@ -401,7 +401,7 @@
 
 <!--Spi_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Spi</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Spi</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Spi_Init</InitFunctionName>
 			<InitFunctionHeader>Spi.h</InitFunctionHeader>
@@ -436,7 +436,7 @@
 
 <!--Uart_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Uart</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Uart</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Uart_Init</InitFunctionName>
 			<InitFunctionHeader>Uart.h</InitFunctionHeader>
@@ -463,7 +463,7 @@
 
 <!--Wdg_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Wdg</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Wdg</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Wdg_43_Instance0_Init</InitFunctionName>
 			<InitFunctionHeader>Wdg_43_Instance0.h</InitFunctionHeader>
@@ -498,7 +498,7 @@
 
 <!--Wdg_43_Instance1_Init-->
 	<InitModule>
-		<ModuleRef>/Wdg_43_Instance1_TS_T40D34M30I0R0/Wdg</ModuleRef>
+		<ModuleRef>/Wdg_43_Instance1_TS_T40D34M20I1R0/Wdg</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Wdg_43_Instance1_Init</InitFunctionName>
 			<InitFunctionHeader>Wdg_43_Instance1.h</InitFunctionHeader>
@@ -534,7 +534,7 @@
 
 <!--Wdg_43_Instance2_Init-->
 	<InitModule>
-		<ModuleRef>/Wdg_43_Instance2_TS_T40D34M30I0R0/Wdg</ModuleRef>
+		<ModuleRef>/Wdg_43_Instance2_TS_T40D34M20I1R0/Wdg</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Wdg_43_Instance2_Init</InitFunctionName>
 			<InitFunctionHeader>Wdg_43_Instance2.h</InitFunctionHeader>
@@ -569,7 +569,7 @@
 
 <!--Wdg_43_Instance3_Init-->
 	<InitModule>
-		<ModuleRef>/Wdg_43_Instance3_TS_T40D34M30I0R0/Wdg</ModuleRef>
+		<ModuleRef>/Wdg_43_Instance3_TS_T40D34M20I1R0/Wdg</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Wdg_43_Instance3_Init</InitFunctionName>
 			<InitFunctionHeader>Wdg_43_Instance3.h</InitFunctionHeader>
@@ -604,7 +604,7 @@
 
 <!--Sbc_fs26_Init-->  
 	<InitModule>
-		<ModuleRef>/TS_T40D34M30I0R0/Sbc_fs26</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Sbc_fs26</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Sbc_fs26_Init</InitFunctionName>
 			<InitFunctionHeader>CDD_Sbc_fs26.h</InitFunctionHeader>
@@ -631,7 +631,7 @@
 
 <!--Wdg_43_fs26_Init-->	
 	<InitModule>
-		<ModuleRef>/Wdg_43_fs26_TS_T40D34M30I0R0/Wdg</ModuleRef>
+		<ModuleRef>/Wdg_43_fs26_TS_T40D34M20I1R0/Wdg</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Wdg_43_fs26_Init</InitFunctionName>
 			<InitFunctionHeader>Wdg_43_fs26.h</InitFunctionHeader>
@@ -666,7 +666,7 @@
 
 <!--No_Bist_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M10I1R0/Bist</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/Bist</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>Bist_Init</InitFunctionName>
 			<InitFunctionHeader>Bist.h</InitFunctionHeader>
@@ -678,7 +678,7 @@
 
 <!--eMcem_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M10I1R0/eMcem</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/eMcem</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>eMcem_Init</InitFunctionName>
 			<InitFunctionHeader>eMcem.h</InitFunctionHeader>
@@ -697,7 +697,7 @@
 
 <!--No_SafetyBase_Init-->
 	<InitModule>
-		<ModuleRef>/TS_T40D34M10I1R0/SafetyBase</ModuleRef>
+		<ModuleRef>/TS_T40D34M20I1R0/SafetyBase</ModuleRef>
 		<ModuleInitFunction>
 			<InitFunctionName>SafetyBase_Init</InitFunctionName>
 			<InitFunctionHeader>SafetyBase.h</InitFunctionHeader>

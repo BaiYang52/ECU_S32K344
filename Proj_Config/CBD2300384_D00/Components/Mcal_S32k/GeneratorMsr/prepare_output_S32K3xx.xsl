@@ -3,7 +3,7 @@
 	<xsl:output indent="yes"/>
 	<!--
 	-->
-	<xsl:variable name="PluginName" select="'TS_T40D17M8I1R0'"/>
+	<xsl:variable name="PluginName" select="'TS_T40D34M20I1R0'"/>
 	<!--
 	-->
 	<!-- ##### Template to remove all MICROSAR components for Tresos Generation ##### -->
@@ -24,33 +24,33 @@
 								not(substring-after(text(), substring-before(text(), '/EcuM'))='/EcuM') and
 								not(substring-after(text(), substring-before(text(), '/EcuC'))='/EcuC') and
 								not(substring-after(text(), substring-before(text(), '/Dem'))='/Dem') and
-								not(contains(text(),'/TS_T40D17M8I1R0/Adc')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Base')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Crypto')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Dio')) and 
-								not(contains(text(),'/Eth_TS_T40D17M8I1R0/Eth')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Fee')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Fls')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Gpt'))and 
-								not(contains(text(),'/TS_T40D17M8I1R0/I2c'))  and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Icu'))  and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Mcl')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Mcu')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Ocu')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Port')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Pwm')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Resource')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Spi')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Uart')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Wdg')) and
-								not(contains(text(),'/Wdg_43_Instance1_TS_T40D34M20I0R0/Wdg')) and
-								not(contains(text(),'/Wdg_43_Instance2_TS_T40D34M20I0R0/Wdg')) and
-								not(contains(text(),'/Wdg_43_Instance3_TS_T40D34M20I0R0/Wdg')) and
-								not(contains(text(),'/TS_T40D17M8I1R0/Sbc_fs26')) and 
-								not(contains(text(),'/Wdg_43_fs26_TS_T40D34M9I1R0/Wdg')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/Bist')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/eMcem')) and 
-								not(contains(text(),'/TS_T40D17M8I1R0/SafetyBase'))]]"/>
+								not(contains(text(),'/TS_T40D34M20I1R0/Adc')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Base')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Crypto')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Dio')) and 
+								not(contains(text(),'/Eth_TS_T40D34M20I1R0/Eth')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Fee')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Fls')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Gpt'))and 
+								not(contains(text(),'/TS_T40D34M20I1R0/I2c'))  and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Icu'))  and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Mcl')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Mcu')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Ocu')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Port')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Pwm')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Resource')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Spi')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Uart')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Wdg')) and
+								not(contains(text(),'/Wdg_43_Instance1_TS_T40D34M20I1R0/Wdg')) and
+								not(contains(text(),'/Wdg_43_Instance2_TS_T40D34M20I1R0/Wdg')) and
+								not(contains(text(),'/Wdg_43_Instance3_TS_T40D34M20I1R0/Wdg')) and
+								not(contains(text(),'/TS_T40D34M20I1R0/Sbc_fs26')) and 
+								not(contains(text(),'/Wdg_43_fs26_TS_T40D34M20I1R0/Wdg')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/Bist')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/eMcem')) and 
+								not(contains(text(),'/TS_T40D34M20I1R0/SafetyBase'))]]"/>
 	<!-- ##### MODULE-REFS will not be removed but are ignored by Tresos ##### -->
 	<!--<xsl:template match="*[local-name()='MODULE-REFS' and *[local-name()='MODULE-REF' and contains(text(),'/MICROSAR/')]]"/>-->
 	<!--

@@ -36,7 +36,7 @@ refer to Settings_ExtGen_S32K3xx.xml
       <Settings Name="DrvWdg_S32K3xxNxp01Asr4Sub">
         <XmlSetting Name="Xml"><![CDATA[
           <Synchronization>
-            <BswImplementationName>/TS_T40D17M8I1R0/Wdg_Impl</BswImplementationName>
+            <BswImplementationName>/TS_T40D34M20I1R0/Wdg_Impl</BswImplementationName>
             <ModuleName>Wdg</ModuleName>
             <ExclusiveAreas>
               <ExclusiveArea name="WDG_EXCLUSIVE_AREA_00"/>

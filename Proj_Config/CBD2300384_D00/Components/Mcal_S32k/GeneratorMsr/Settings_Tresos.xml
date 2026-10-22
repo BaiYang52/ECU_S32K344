@@ -31,13 +31,13 @@ refer to Settings_ExtGen_S32K3xx.xml
 -->
 <Settings>
 	<Settings Name="com.vector.cfg.gen.Tresos_proxy.settings.TresosSettings">
-		<Setting Name="TresosFolder" Value="$(SipRootPath)\ThirdParty\Mcal_S32k\Supply\Tresos"/>
-		<Setting Name="RequiredAsVersion" Value="4.3.1"/>
+		<Setting Name="TresosFolder" Value="$(SipRootPath)\ThirdParty\Mcal_S32k\Supply\tresos"/>
+		<Setting Name="RequiredAsVersion" Value="4.4.0"/>
 		<Setting Name="SpecificAsVersionRequired" Value="true"/>
 		<Setting Name="GenerateModulesAtOnce" Value="true"/>
 		<!--<Setting Name="IgnoreTresosMsgIDs" Value="1055,1072,1648"/>-->
 		<!-- Optional: To disable printing of any messages with a specific message id. Several ids can be passed comma separated. For each message id a commandline option -D<msgId>=false is passed to the tresos executable. -->
 		<Setting Name="IgnoreTresosMsgIDs" Value="1648,1055,1072"/>
-		<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\DaVinciConfigurator\Generators\Mcal_S32k\prepare_output_S32K3xx.xsl"/>
+		<Setting Name="TransformationXsltFile" Value="$(SipRootPath)\Components\Mcal_S32k\GeneratorMsr\prepare_output_S32K3xx.xsl"/>
 	</Settings>
 </Settings>

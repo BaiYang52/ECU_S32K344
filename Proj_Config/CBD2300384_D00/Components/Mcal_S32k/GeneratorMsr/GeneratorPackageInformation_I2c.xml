@@ -32,7 +32,7 @@ Refer to Settings_ExtGen_S32K3xx.xml
 -->
 <GeneratorPackageInformation xsi:schemaLocation="com.vector.cfg.gen.core.generatorpackageinformation GeneratorPackageInformation.xsd" xmlns="com.vector.cfg.gen.core.generatorpackageinformation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<GeneratorPackage>
-		<DefRef>/TS_T40D34M8I0R0/I2c</DefRef>
+		<DefRef>/TS_T40D34M20I1R0/I2c</DefRef>
 		<AutosarLayer>MCAL</AutosarLayer>
 	</GeneratorPackage>
 </GeneratorPackageInformation>
